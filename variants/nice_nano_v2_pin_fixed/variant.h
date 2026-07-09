@@ -20,8 +20,8 @@ extern "C"
 {
 #endif // __cplusplus
 
-#define PINS_COUNT           (23)
-#define NUM_DIGITAL_PINS     (23)
+#define PINS_COUNT           (24)
+#define NUM_DIGITAL_PINS     (24)
 #define NUM_ANALOG_INPUTS    (3)
 #define NUM_ANALOG_OUTPUTS   (0)
 
@@ -36,13 +36,13 @@ extern "C"
 #define EXT_VCC              (PIN_EXT_VCC)
 
 // LEDs
-#define PIN_LED              (PINS_COUNT) // onboard LED is P0.15; not assigned an Arduino pin
-#define LED_BLUE             (PINS_COUNT) // required by Bluefruit52Lib; onboard LED is P0.15
-#define LED_RED              (PINS_COUNT) // required by some Adafruit libs; onboard LED is P0.15
+#define PIN_LED              (23) // onboard LED is P0.15
+#define LED_BLUE             (PIN_LED) // required by Bluefruit52Lib
+#define LED_RED              (PIN_LED) // required by some Adafruit libs
 #define LED_PWR              (PINS_COUNT) // no LED_PWR
 #define PIN_NEOPIXEL         (PINS_COUNT) // no neopixel
 #define NEOPIXEL_NUM         0
-#define LED_BUILTIN          (PINS_COUNT) // onboard LED is P0.15; not assigned an Arduino pin
+#define LED_BUILTIN          (PIN_LED)
 
 #define LED_STATE_ON         1         // State when LED is on
 
@@ -80,6 +80,7 @@ extern "C"
 //   D20 = P0.29  (A1)
 //   D21 = P0.31  (A0)
 //   D22 = P0.13  (EXT_VCC)
+//   D23 = P0.15  (onboard LED)
 
 #define D0  (0ul)  // P0.08 (RX)
 #define D1  (1ul)  // P0.06 (TX)
@@ -104,6 +105,8 @@ extern "C"
 #define D19 (19ul) // P0.02 (A2)
 #define D20 (20ul) // P0.29 (A1)
 #define D21 (21ul) // P0.31 (A0)
+#define D22 (22ul) // P0.13 (EXT_VCC)
+#define D23 (23ul) // P0.15 (onboard LED)
 
 /*
  * Macros for nRF pin numbers for compatibility
@@ -127,6 +130,7 @@ extern "C"
 #define P0_29 (D20)
 #define P0_31 (D21)
 #define P0_13 (PIN_EXT_VCC)
+#define P0_15 (PIN_LED)
 
 /*
  * Analog pins

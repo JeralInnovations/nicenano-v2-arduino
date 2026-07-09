@@ -33,6 +33,9 @@ const uint32_t g_ADigitalPinMap[] =
 
     // External VCC cutoff control
     13,  // D22 = P0.13 (EXT_VCC)
+
+    // Onboard LED
+    15,  // D23 = P0.15 (LED_BUILTIN)
 };
 
 void initVariant()

@@ -11,7 +11,7 @@ Install once, compile and upload — no additional board packages required.
 | **Flash / RAM** | 1 MB flash (815 KB usable) / 256 KB RAM |
 | **Wireless** | Bluetooth 5.0 Low Energy (SoftDevice S140 6.1.1) |
 | **USB** | Native USB via TinyUSB (CDC serial, HID, MSC) |
-| **GPIO** | 21 digital pins (D0–D21), 3 analog inputs (A0–A2) |
+| **GPIO** | 21 edge digital pins (D0–D21), 3 analog inputs (A0–A2), plus `EXT_VCC` and `LED_BUILTIN` |
 | **Interfaces** | 2x I2C, 2x SPI, 1x UART |
 | **Battery** | LiPo charging over USB; read voltage with `analogReadVDDHDIV5()` |
 | **Bootloader** | Adafruit nRF52 DFU (double-tap reset to enter) |
@@ -66,7 +66,7 @@ D11, D12, D13, and D17 exist in the pin table but are not physically routed on t
 
 | Pin | nRF52840 | Function |
 |-----|----------|----------|
-| Onboard LED | P0.15 | Status LED |
+| `LED_BUILTIN` / D23 | P0.15 | Status LED |
 
 ### Special Pins
 
