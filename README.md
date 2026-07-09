@@ -62,6 +62,12 @@ Pins are numbered to match the physical board layout (silkscreen labels).
 
 D11, D12, D13, and D17 exist in the pin table but are not physically routed on the board.
 
+### Onboard
+
+| Pin | nRF52840 | Function |
+|-----|----------|----------|
+| Onboard LED | P0.15 | Status LED |
+
 ### Special Pins
 
 | Name | Pin | Notes |

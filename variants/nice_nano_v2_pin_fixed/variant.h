@@ -36,13 +36,13 @@ extern "C"
 #define EXT_VCC              (PIN_EXT_VCC)
 
 // LEDs
-#define PIN_LED              (PINS_COUNT) // no LED on this board
-#define LED_BLUE             (PINS_COUNT) // required by Bluefruit52Lib; no physical LED
-#define LED_RED              (PINS_COUNT) // required by some Adafruit libs; no physical LED
+#define PIN_LED              (PINS_COUNT) // onboard LED is P0.15; not assigned an Arduino pin
+#define LED_BLUE             (PINS_COUNT) // required by Bluefruit52Lib; onboard LED is P0.15
+#define LED_RED              (PINS_COUNT) // required by some Adafruit libs; onboard LED is P0.15
 #define LED_PWR              (PINS_COUNT) // no LED_PWR
 #define PIN_NEOPIXEL         (PINS_COUNT) // no neopixel
 #define NEOPIXEL_NUM         0
-#define LED_BUILTIN          (PINS_COUNT) // no built-in LED
+#define LED_BUILTIN          (PINS_COUNT) // onboard LED is P0.15; not assigned an Arduino pin
 
 #define LED_STATE_ON         1         // State when LED is on
 
